@@ -1,65 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prospective Design & Build</title>
-<style>
-body {margin:0;font-family:Arial;background:#f5f5f5;}
-header {background:#111;color:#fff;padding:15px;text-align:center;}
-nav a {color:#fff;margin:0 15px;text-decoration:none;}
-.hero {background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
-height:400px;color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;}
-.section {padding:40px;text-align:center;}
-.cards {display:flex;gap:20px;justify-content:center;flex-wrap:wrap;}
-.card {background:#fff;padding:20px;width:250px;border-radius:10px;}
-footer {background:#111;color:#fff;text-align:center;padding:15px;}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Interior Design</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header>
-<h2>Prospective Design & Build</h2>
-<nav>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="projects.html">Projects</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
-
-<div class="hero">
-<h1>Luxury Interior Design</h1>
-<p>We Design Your Dream Spaces</p>
-</div>
-
-<div class="section">
-<h2>Welcome to Prospective Design & Build</h2>
-<p>Transform your spaces into stunning environments with our expert design and build services.</p>
-</div>
-
-<div class="section">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card">
-<h3>Interior Design</h3>
-<p>Custom interior design solutions tailored to your style.</p>
-</div>
-<div class="card">
-<h3>Construction</h3>
-<p>Professional construction and renovation services.</p>
-</div>
-<div class="card">
-<h3>Project Management</h3>
-<p>Complete project oversight from concept to completion.</p>
-</div>
-</div>
-</div>
-
-<footer>
-<p>&copy; 2026 Prospective Design & Build. All rights reserved.</p>
-</footer>
-
+    <nav class="fixed-nav">
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Luxury Interior Design</h1>
+            <p>Elevate your space with our exquisite designs.</p>
+        </div>
+    </header>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">Design Consultation</div>
+            <div class="card">Space Planning</div>
+            <div class="card">Custom Furniture</div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-gallery">
+            <img src="image1.jpg" alt="Project 1">
+            <img src="image2.jpg" alt="Project 2">
+        </div>
+    </section>
+    <footer>
+        <div id="contact">
+            <h2>Contact Us</h2>
+            <p>For inquiries, reach out via <a href="https://wa.me/1234567890">WhatsApp</a>.</p>
+        </div>
+    </footer>
 </body>
 </html>
