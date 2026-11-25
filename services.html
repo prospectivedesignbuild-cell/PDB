@@ -1,33 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>About Us | Prospective Design And Build</title>
+    <meta name="description" content="Learn about Prospective Design And Build—our engineering-driven turnkey interior execution process, material expertise, and Pan-India delivery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldBrand: '#043927',
+                        emeraldLight: '#0A5C40',
+                        goldBrand: '#C5A059',
+                        goldLight: '#DFC180',
+                        offWhite: '#F9F8F4'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Our Services</h1>
+<body class="bg-offWhite text-gray-900 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-emeraldBrand/95 backdrop-blur-md border-b border-goldBrand/20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
+                <div class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-goldBrand/60 bg-emeraldBrand flex items-center justify-center shrink-0">
+                    <img src="logo.png" alt="Prospective Design And Build Logo" class="h-full w-full object-cover scale-110">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-goldBrand leading-tight">PROSPECTIVE</span>
+                    <span class="text-[9px] sm:text-[11px] tracking-[0.2em] uppercase text-gray-200">Design And Build</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-goldBrand transition">Home</a>
+                <a href="about.html" class="text-goldBrand font-semibold">About</a>
+                <a href="services.html" class="hover:text-goldBrand transition">Services</a>
+                <a href="index.html#calculator" class="hover:text-goldBrand transition">Cost Estimator</a>
+                <a href="portfolio.html" class="hover:text-goldBrand transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-goldBrand transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/919235261004" target="_blank" class="hidden sm:inline-flex items-center bg-goldBrand text-emeraldBrand px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition">
+                    <i class="fab fa-whatsapp mr-1.5"></i> Book Consultation
+                </a>
+                <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden text-goldBrand text-2xl p-2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden bg-emeraldBrand border-t border-goldBrand/20 px-6 py-4 space-y-3 text-sm">
+            <a href="index.html" class="block hover:text-goldBrand py-1">Home</a>
+            <a href="about.html" class="block text-goldBrand font-semibold py-1">About</a>
+            <a href="services.html" class="block hover:text-goldBrand py-1">Services</a>
+            <a href="index.html#calculator" class="block hover:text-goldBrand py-1">Cost Estimator</a>
+            <a href="portfolio.html" class="block hover:text-goldBrand py-1">Portfolio</a>
+            <a href="contact.html" class="block hover:text-goldBrand py-1">Contact</a>
+        </div>
     </header>
-    <main>
-        <section class="services">
-            <div class="service-card">
-                <h2>Luxury Residential Interiors</h2>
-                <p>We specialize in creating luxurious and elegant interior spaces tailored to individual tastes and lifestyles. Our team integrates aesthetics with functionality to deliver spaces that are both beautiful and livable.</p>
+
+    <!-- Page Banner -->
+    <section class="pt-32 pb-16 bg-emeraldBrand text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">Our Story And Standards</span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2">Engineering Discipline Meets Bespoke Aesthetics</h1>
+            <p class="text-gray-300 text-sm sm:text-base mt-4">Structured Interiors. Reliable Execution — Serving Pan-India Including Lucknow.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80" alt="Prospective Design And Build Architecture" class="rounded-2xl shadow-lg w-full h-96 object-cover">
+            <div>
+                <h2 class="font-serif text-3xl font-bold text-emeraldBrand mb-6">Who We Are</h2>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-4">
+                    Founded by Pramod Kumar Singh with over a decade of specialized industry leadership in decorative laminates, architectural surfaces, plywood, and turnkey interior contracting, <strong>Prospective Design And Build</strong> brings corporate-grade accountability to interior execution.
+                </p>
+                <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
+                    Whether executing a luxury villa in Lucknow, a banquet complex in Ranchi, or a high-security showroom in Pilibhit, every project follows documented 3D visualizations, transparent Bill of Quantities (BOQ), and fixed milestone timelines.
+                </p>
+                <ul class="space-y-3 text-sm text-gray-800 font-medium">
+                    <li><i class="fas fa-check-circle text-goldBrand mr-3"></i> BWP Marine-Grade Plywood And Certified Architectural Surfaces</li>
+                    <li><i class="fas fa-check-circle text-goldBrand mr-3"></i> Zero Hidden Cost Escalations with Itemized BOQ</li>
+                    <li><i class="fas fa-check-circle text-goldBrand mr-3"></i> Dedicated Site Supervision And Quality Checklists</li>
+                </ul>
             </div>
-            <div class="service-card">
-                <h2>Retail & Showroom Design</h2>
-                <p>Our retail and showroom designs focus on maximizing customer experience and engagement. We work closely with clients to develop innovative layouts and displays that reflect their brand identity.</p>
+        </div>
+
+        <!-- 4-Step Process -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">How We Work</span>
+            <h2 class="font-serif text-3xl font-bold text-emeraldBrand mt-2">Our 4-Stage Execution Framework</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <span class="font-serif text-3xl font-bold text-goldBrand">01</span>
+                <h3 class="font-serif text-lg font-bold text-emeraldBrand mt-2 mb-2">Site Audit And Brief</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Laser measurement, structural inspection, MEP assessment, and lifestyle or operational requirement mapping.</p>
             </div>
-            <div class="service-card">
-                <h2>Turnkey Execution</h2>
-                <p>From conception to completion, our turnkey execution services ensure seamless project delivery. We handle everything from planning and design to construction and final touches, so you can focus on what matters most.</p>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <span class="font-serif text-3xl font-bold text-goldBrand">02</span>
+                <h3 class="font-serif text-lg font-bold text-emeraldBrand mt-2 mb-2">3D Design And BOQ</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Photorealistic 3D renders, material finish boards, and line-by-line transparent costing before work begins.</p>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Your Company Name. All rights reserved.</p>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <span class="font-serif text-3xl font-bold text-goldBrand">03</span>
+                <h3 class="font-serif text-lg font-bold text-emeraldBrand mt-2 mb-2">Precision Build</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Civil modifications, concealed electrical/plumbing, false ceiling, and factory-finished modular woodwork.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                <span class="font-serif text-3xl font-bold text-goldBrand">04</span>
+                <h3 class="font-serif text-lg font-bold text-emeraldBrand mt-2 mb-2">Snag-Free Handover</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">Deep cleaning, hardware calibration, lighting checks, and documented turnkey handover on schedule.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emeraldBrand text-white py-10 border-t border-goldBrand/20 text-center text-xs text-gray-300">
+        <p class="font-serif text-lg text-goldBrand font-bold mb-1">Prospective Design And Build</p>
+        <p>P Block, Alaknanda Apartment, Opposite DPS, Sector 4, Gomti Nagar Extension, Lucknow 226010 | +91 92352 61004</p>
+        <p class="mt-4 text-gray-400">&copy; 2026 Prospective Design And Build. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
