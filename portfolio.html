@@ -1,1 +1,156 @@
 
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Prospective Design And Build</title>
+    <meta name="description" content="Explore completed and ongoing turnkey interior and construction projects across Lucknow, Ranchi, Bareilly, Pilibhit, Noida, and Madhubani.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emeraldBrand: '#043927',
+                        emeraldLight: '#0A5C40',
+                        goldBrand: '#C5A059',
+                        goldLight: '#DFC180',
+                        offWhite: '#F9F8F4'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-offWhite text-gray-900 font-sans antialiased">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 bg-emeraldBrand/95 backdrop-blur-md border-b border-goldBrand/20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
+                <div class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-goldBrand/60 bg-emeraldBrand flex items-center justify-center shrink-0">
+                    <img src="logo.png" alt="Prospective Design And Build Logo" class="h-full w-full object-cover scale-110">
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-goldBrand leading-tight">PROSPECTIVE</span>
+                    <span class="text-[9px] sm:text-[11px] tracking-[0.2em] uppercase text-gray-200">Design And Build</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="hover:text-goldBrand transition">Home</a>
+                <a href="about.html" class="hover:text-goldBrand transition">About</a>
+                <a href="services.html" class="hover:text-goldBrand transition">Services</a>
+                <a href="index.html#calculator" class="hover:text-goldBrand transition">Cost Estimator</a>
+                <a href="portfolio.html" class="text-goldBrand font-semibold">Portfolio</a>
+                <a href="contact.html" class="hover:text-goldBrand transition">Contact</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/919235261004" target="_blank" class="hidden sm:inline-flex items-center bg-goldBrand text-emeraldBrand px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition">
+                    <i class="fab fa-whatsapp mr-1.5"></i> Book Consultation
+                </a>
+                <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden text-goldBrand text-2xl p-2">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden lg:hidden bg-emeraldBrand border-t border-goldBrand/20 px-6 py-4 space-y-3 text-sm">
+            <a href="index.html" class="block hover:text-goldBrand py-1">Home</a>
+            <a href="about.html" class="block hover:text-goldBrand py-1">About</a>
+            <a href="services.html" class="block hover:text-goldBrand py-1">Services</a>
+            <a href="index.html#calculator" class="block hover:text-goldBrand py-1">Cost Estimator</a>
+            <a href="portfolio.html" class="block text-goldBrand font-semibold py-1">Portfolio</a>
+            <a href="contact.html" class="block hover:text-goldBrand py-1">Contact</a>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="pt-32 pb-16 bg-emeraldBrand text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">Pan-India Track Record</span>
+            <h1 class="font-serif text-4xl sm:text-5xl font-bold mt-2">Featured Projects And Execution</h1>
+            <p class="text-gray-300 text-sm sm:text-base mt-4">Selected residential, commercial, and hospitality deliveries across India.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Gallery -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=800&q=80" alt="Luxury Modular Kitchen Lucknow" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Sushant Golf City, Lucknow</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">23×10 Sq. Ft. Luxury Modular Kitchen</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">High-gloss acrylic cabinetry, concealed piping, quartz countertops, and integrated appliance housing.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=80" alt="Ranchi Hotel And Banquet Complex" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Ranchi, Jharkhand</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">Luxury Hotel And Banquet Complex</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">Turnkey hospitality execution including grand lobby, acoustic banquet ceiling, and guest room suites.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Noida Wave City Bungalow" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Wave City, Noida (NCR)</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">6,500 Sq. Ft. Signature Bungalow</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">Complete multi-level luxury residence with bespoke veneer paneling, Italian flooring, and smart lighting.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80" alt="Corporate Office Sushant Golf City" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Lucknow, Uttar Pradesh</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">Real Estate Corporate Office</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">Director cabins, conference room, glass partitions, and modern workstation layout in Sushant Golf City.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1582037928769-181f2644ecb7?auto=format&fit=crop&w=800&q=80" alt="Jewelry Showroom Pilibhit" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Pilibhit And Bareilly</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">Jewelry Showroom And Turnkey Villa</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">High-CRI display lighting, custom brass-accented counters, and turnkey residential construction.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Shalimar One World And Madhubani" class="w-full h-56 object-cover">
+                <div class="p-6">
+                    <span class="text-xs font-bold text-goldBrand uppercase">Lucknow And Madhubani</span>
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mt-1">3BHK Apartments And Bespoke Homes</h3>
+                    <p class="text-xs text-gray-600 mt-2 leading-relaxed">Completed turnkey residential handovers at Shalimar One World, Ansal, and Madhubani (Bihar).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emeraldBrand text-white py-10 border-t border-goldBrand/20 text-center text-xs text-gray-300">
+        <p class="font-serif text-lg text-goldBrand font-bold mb-1">Prospective Design And Build</p>
+        <p>P Block, Alaknanda Apartment, Opposite DPS, Sector 4, Gomti Nagar Extension, Lucknow 226010 | +91 92352 61004</p>
+        <p class="mt-4 text-gray-400">&copy; 2026 Prospective Design And Build. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
