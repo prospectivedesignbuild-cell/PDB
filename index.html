@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prospective Design And Build | Structured Interiors. Reliable Execution.</title>
     <meta name="description" content="Prospective Design And Build offers structured, turnkey residential, commercial, and hospitality interior design and construction services across Pan-India including Lucknow.">
-    <meta name="keywords" content="Prospective Design And Build, Turnkey Interior Design India, Interior Designer Lucknow, Commercial Interiors, Luxury Residential Interiors">
-    <meta name="author" content="Prospective Design And Build">
-    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.prospectivedesignbuild.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.prospectivedesignbuild.com/">
-    <meta property="og:title" content="Prospective Design And Build | Structured Interiors. Reliable Execution.">
-    <meta property="og:description" content="Pan-India luxury turnkey interior design, architectural visualization, and construction execution.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -37,36 +30,13 @@
             }
         }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Prospective Design And Build",
-      "description": "Structured Interiors. Reliable Execution. Turnkey residential, commercial, and hospitality interior design and construction firm serving Pan-India including Lucknow.",
-      "url": "https://www.prospectivedesignbuild.com/",
-      "telephone": "+91-9235261004",
-      "email": "info@prospectivedesignbuild.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "P Block, Alaknanda Apartment, Opposite DPS, Sector 4, Gomti Nagar Extension",
-        "addressLocality": "Lucknow",
-        "addressRegion": "Uttar Pradesh",
-        "postalCode": "226010",
-        "addressCountry": "IN"
-      },
-      "areaServed": "India",
-      "sameAs": [
-        "https://www.instagram.com/prospectivedesignbui"
-      ]
-    }
-    </script>
 </head>
 <body class="bg-offWhite text-gray-900 font-sans antialiased">
 
-    <!-- Top Navigation with Circular Cropped Logo (No Whiteness) -->
+    <!-- Navigation Header -->
     <header class="fixed w-full top-0 z-50 bg-emeraldBrand/95 backdrop-blur-md border-b border-goldBrand/20 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20 gap-4">
-            <a href="#" class="flex items-center gap-3 shrink-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center gap-3 shrink-0">
                 <div class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-goldBrand/60 bg-emeraldBrand flex items-center justify-center shrink-0">
                     <img src="logo.png" alt="Prospective Design And Build Logo" class="h-full w-full object-cover scale-110">
                 </div>
@@ -75,14 +45,36 @@
                     <span class="text-[9px] sm:text-[11px] tracking-[0.2em] uppercase text-gray-200">Design And Build</span>
                 </div>
             </a>
+
+            <!-- Desktop Menu -->
             <nav class="hidden lg:flex space-x-6 text-sm font-medium">
-                <a href="#about" class="hover:text-goldBrand transition">About</a>
-                <a href="#services" class="hover:text-goldBrand transition">Services</a>
+                <a href="index.html" class="text-goldBrand font-semibold">Home</a>
+                <a href="about.html" class="hover:text-goldBrand transition">About</a>
+                <a href="services.html" class="hover:text-goldBrand transition">Services</a>
                 <a href="#calculator" class="hover:text-goldBrand transition">Cost Estimator</a>
-                <a href="#projects" class="hover:text-goldBrand transition">Portfolio</a>
-                <a href="#contact" class="hover:text-goldBrand transition">Contact</a>
+                <a href="portfolio.html" class="hover:text-goldBrand transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-goldBrand transition">Contact</a>
             </nav>
-            <a href="https://wa.me/919235261004?text=Hello%20Prospective%20Design%20And%20Build,%20I%20would%20like%20to%20discuss%20an%20interior%20project." target="_blank" class="shrink-0 bg-goldBrand text-emeraldBrand px-3.5 sm:px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition shadow-md">
+
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/919235261004?text=Hello%20Prospective%20Design%20And%20Build,%20I%20would%20like%20to%20discuss%20an%20interior%20project." target="_blank" class="hidden sm:inline-flex items-center bg-goldBrand text-emeraldBrand px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition shadow-md">
+                    <i class="fab fa-whatsapp mr-1.5"></i> Book Consultation
+                </a>
+                <button onclick="document.getElementById('mobileMenu').classList.toggle('hidden')" class="lg:hidden text-goldBrand text-2xl p-2 focus:outline-none" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile/Tablet Dropdown Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-emeraldBrand border-t border-goldBrand/20 px-6 py-4 space-y-3 text-sm">
+            <a href="index.html" class="block text-goldBrand font-semibold py-1">Home</a>
+            <a href="about.html" class="block hover:text-goldBrand py-1">About</a>
+            <a href="services.html" class="block hover:text-goldBrand py-1">Services</a>
+            <a href="#calculator" class="block hover:text-goldBrand py-1">Cost Estimator</a>
+            <a href="portfolio.html" class="block hover:text-goldBrand py-1">Portfolio</a>
+            <a href="contact.html" class="block hover:text-goldBrand py-1">Contact</a>
+            <a href="https://wa.me/919235261004" target="_blank" class="block text-center bg-goldBrand text-emeraldBrand py-2.5 rounded-md font-bold mt-2">
                 <i class="fab fa-whatsapp mr-1"></i> Book Consultation
             </a>
         </div>
@@ -90,7 +82,7 @@
 
     <!-- Hero Section -->
     <section class="relative pt-32 pb-24 lg:pt-44 lg:pb-32 bg-emeraldBrand text-white overflow-hidden">
-        <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
+        <div class="absolute inset-0 opacity-25 bg-[url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center"></div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <span class="inline-block py-1 px-3 rounded-full bg-goldBrand/20 border border-goldBrand/40 text-goldBrand text-xs font-semibold tracking-widest uppercase mb-6">
                 Serving Pan-India Including Lucknow
@@ -105,8 +97,8 @@
                 <a href="#calculator" class="bg-goldBrand text-emeraldBrand px-8 py-4 rounded-md font-bold text-sm uppercase tracking-wider hover:bg-goldLight transition shadow-lg">
                     Calculate Project Estimate
                 </a>
-                <a href="#contact" class="border border-goldBrand text-white px-8 py-4 rounded-md font-semibold text-sm uppercase tracking-wider hover:bg-goldBrand/10 transition">
-                    Schedule Site Visit
+                <a href="portfolio.html" class="border border-goldBrand text-white px-8 py-4 rounded-md font-semibold text-sm uppercase tracking-wider hover:bg-goldBrand/10 transition">
+                    Explore Our Portfolio
                 </a>
             </div>
         </div>
@@ -134,34 +126,37 @@
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Quick Highlights with Links to Pages -->
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">What We Deliver</span>
             <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldBrand mt-2">Comprehensive Design And Build Solutions</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand/50 transition">
-                <div class="w-12 h-12 bg-emeraldBrand text-goldBrand rounded-lg flex items-center justify-center text-xl mb-6">
-                    <i class="fas fa-home"></i>
+            <a href="services.html" class="group bg-white rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Turnkey Residential Interiors" class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                <div class="p-8">
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-2">Turnkey Residential Interiors</h3>
+                    <p class="text-gray-600 text-sm mb-4">Complete 2BHK, 3BHK, 4BHK, and luxury villa execution with modular kitchens and wardrobes.</p>
+                    <span class="text-xs font-bold uppercase tracking-wider text-goldBrand">View Details <i class="fas fa-arrow-right ml-1"></i></span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Turnkey Residential Interiors</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Complete 2BHK, 3BHK, 4BHK, and luxury villa execution—including false ceiling, electrical, concealed plumbing, modular kitchens, wardrobes, and soft furnishings.</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand/50 transition">
-                <div class="w-12 h-12 bg-emeraldBrand text-goldBrand rounded-lg flex items-center justify-center text-xl mb-6">
-                    <i class="fas fa-building"></i>
+            </a>
+            <a href="services.html" class="group bg-white rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Commercial And Retail Spaces" class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                <div class="p-8">
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-2">Commercial And Retail Spaces</h3>
+                    <p class="text-gray-600 text-sm mb-4">Corporate offices, jewelry showrooms, clinics, and institutional interiors across India.</p>
+                    <span class="text-xs font-bold uppercase tracking-wider text-goldBrand">View Details <i class="fas fa-arrow-right ml-1"></i></span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Commercial And Retail Spaces</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">High-efficiency corporate offices, showrooms, clinics, and institutional interiors engineered for acoustics, ergonomics, and brand identity.</p>
-            </div>
-            <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand/50 transition">
-                <div class="w-12 h-12 bg-emeraldBrand text-goldBrand rounded-lg flex items-center justify-center text-xl mb-6">
-                    <i class="fas fa-hotel"></i>
+            </a>
+            <a href="services.html" class="group bg-white rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand transition overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Hospitality And Civil Build" class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
+                <div class="p-8">
+                    <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-2">Hospitality And Civil Build</h3>
+                    <p class="text-gray-600 text-sm mb-4">Luxury hotels, banquet complexes, and turnkey structural construction with BOQ clarity.</p>
+                    <span class="text-xs font-bold uppercase tracking-wider text-goldBrand">View Details <i class="fas fa-arrow-right ml-1"></i></span>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Hospitality And Civil Build</h3>
-                <p class="text-gray-600 text-sm leading-relaxed">Boutique hotels, banquet halls, and structural civil renovation with strict BOQ transparency and milestone-based quality audits.</p>
-            </div>
+            </a>
         </div>
     </section>
 
@@ -212,55 +207,22 @@
         </div>
     </section>
 
-    <!-- About & Process -->
-    <section id="about" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">Why Prospective Design And Build</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldBrand mt-2 mb-6">Engineering Discipline Meets Bespoke Aesthetics</h2>
-                <p class="text-gray-600 text-sm sm:text-base leading-relaxed mb-6">
-                    Founded with over a decade of deep industry expertise in architectural surfaces, laminates, and turnkey construction, Prospective Design And Build eliminates the chaos of unorganized contracting. Every project is governed by documented 3D visualizations, transparent Bill of Quantities (BOQ), and strict stage-wise supervision.
-                </p>
-                <ul class="space-y-3 text-sm text-gray-700">
-                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Factory-finished modular woodwork And BWP marine-grade plywood</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Fixed-price milestone billing with zero hidden escalations</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Dedicated on-site engineering And Pan-India logistics support</li>
-                </ul>
-            </div>
-            <div id="projects" class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">Lucknow</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Luxury Residences And Kitchens</h4>
-                    <p class="text-xs text-gray-500 mt-2">Sushant Golf City, Gomti Nagar Extension And Shalimar One World.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">Ranchi</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Hotel And Banquet Complex</h4>
-                    <p class="text-xs text-gray-500 mt-2">Turnkey hospitality interiors, acoustic paneling, and lobby design.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">Bareilly And Pilibhit</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Villas And Retail Showrooms</h4>
-                    <p class="text-xs text-gray-500 mt-2">Custom villa construction and high-security jewelry showroom interiors.</p>
-                </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">NCR And Bihar</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Bungalows And Turnkey Sites</h4>
-                    <p class="text-xs text-gray-500 mt-2">Noida Wave City and Madhubani bespoke residential handovers.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Footer -->
-    <footer id="contact" class="bg-emeraldBrand text-white pt-16 pb-8 border-t border-goldBrand/20">
+    <!-- Footer -->
+    <footer class="bg-emeraldBrand text-white pt-16 pb-8 border-t border-goldBrand/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
             <div>
                 <h3 class="font-serif text-2xl font-bold text-goldBrand">Prospective Design And Build</h3>
                 <p class="text-xs uppercase tracking-widest text-gray-300 mt-1 mb-4">Structured Interiors. Reliable Execution.</p>
-                <p class="text-sm text-gray-300 leading-relaxed">
-                    Headquartered in Lucknow and delivering turnkey interior design and build projects across India.
-                </p>
+                <p class="text-sm text-gray-300 leading-relaxed">Headquartered in Lucknow and delivering turnkey interior design and build projects across India.</p>
+            </div>
+            <div>
+                <h4 class="font-serif text-lg font-semibold text-goldBrand mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="about.html" class="hover:text-goldBrand">About Us</a></li>
+                    <li><a href="services.html" class="hover:text-goldBrand">Our Services</a></li>
+                    <li><a href="portfolio.html" class="hover:text-goldBrand">Project Portfolio</a></li>
+                    <li><a href="contact.html" class="hover:text-goldBrand">Contact And Office</a></li>
+                </ul>
             </div>
             <div>
                 <h4 class="font-serif text-lg font-semibold text-goldBrand mb-4">Head Office</h4>
@@ -268,24 +230,8 @@
                     <i class="fas fa-map-marker-alt text-goldBrand mr-2"></i>
                     P Block, Alaknanda Apartment, Opposite DPS, Sector 4, Gomti Nagar Extension, Lucknow, Uttar Pradesh 226010
                 </p>
-                <p class="text-sm text-gray-300 mt-3">
-                    <i class="fas fa-phone-alt text-goldBrand mr-2"></i> +91 92352 61004
-                </p>
-                <p class="text-sm text-gray-300 mt-2">
-                    <i class="fas fa-envelope text-goldBrand mr-2"></i> info@prospectivedesignbuild.com
-                </p>
-            </div>
-            <div>
-                <h4 class="font-serif text-lg font-semibold text-goldBrand mb-4">Direct Inquiry</h4>
-                <p class="text-sm text-gray-300 mb-4">Share your floor plan or site location for a structured consultation.</p>
-                <a href="https://wa.me/919235261004" target="_blank" class="inline-flex items-center bg-goldBrand text-emeraldBrand px-6 py-3 rounded-lg font-bold text-sm hover:bg-goldLight transition">
-                    <i class="fab fa-whatsapp mr-2 text-lg"></i> Chat on WhatsApp
-                </a>
-                <div class="mt-4 flex space-x-4 text-gray-300">
-                    <a href="https://www.instagram.com/prospectivedesignbui" target="_blank" class="hover:text-goldBrand transition text-sm">
-                        <i class="fab fa-instagram mr-1"></i> @prospectivedesignbui
-                    </a>
-                </div>
+                <p class="text-sm text-gray-300 mt-3"><i class="fas fa-phone-alt text-goldBrand mr-2"></i> +91 92352 61004</p>
+                <p class="text-sm text-gray-300 mt-2"><i class="fas fa-envelope text-goldBrand mr-2"></i> info@prospectivedesignbuild.com</p>
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 text-center text-xs text-gray-400">
@@ -300,15 +246,11 @@
             const multiplier = parseFloat(document.getElementById('projectType').value);
             document.getElementById('areaValue').innerText = area.toLocaleString('en-IN') + ' sq.ft';
             const total = area * rate * multiplier;
-            let formatted = '';
-            if (total >= 10000000) {
-                formatted = '₹' + (total / 10000000).toFixed(2) + ' Crore';
-            } else {
-                formatted = '₹' + (total / 100000).toFixed(2) + ' Lakhs';
-            }
+            let formatted = total >= 10000000
+                ? '₹' + (total / 10000000).toFixed(2) + ' Crore'
+                : '₹' + (total / 100000).toFixed(2) + ' Lakhs';
             document.getElementById('estimatedCost').innerText = formatted;
         }
-
         function sendEstimateWhatsApp() {
             const area = document.getElementById('areaValue').innerText;
             const cost = document.getElementById('estimatedCost').innerText;
