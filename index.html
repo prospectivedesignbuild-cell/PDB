@@ -63,24 +63,26 @@
 </head>
 <body class="bg-offWhite text-gray-900 font-sans antialiased">
 
-    <!-- Top Navigation with Logo -->
+    <!-- Top Navigation with Circular Cropped Logo (No Whiteness) -->
     <header class="fixed w-full top-0 z-50 bg-emeraldBrand/95 backdrop-blur-md border-b border-goldBrand/20 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
-            <a href="#" class="flex items-center gap-3">
-                <img src="logo.png" alt="Prospective Design And Build Logo" class="h-14 w-auto object-contain">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20 gap-4">
+            <a href="#" class="flex items-center gap-3 shrink-0">
+                <div class="h-12 w-12 sm:h-14 sm:w-14 rounded-full overflow-hidden border border-goldBrand/60 bg-emeraldBrand flex items-center justify-center shrink-0">
+                    <img src="logo.png" alt="Prospective Design And Build Logo" class="h-full w-full object-cover scale-110">
+                </div>
                 <div class="flex flex-col">
-                    <span class="font-serif text-xl sm:text-2xl font-bold tracking-wide text-goldBrand">PROSPECTIVE</span>
-                    <span class="text-[10px] sm:text-xs tracking-[0.22em] uppercase text-gray-200">Design And Build</span>
+                    <span class="font-serif text-lg sm:text-xl font-bold tracking-wide text-goldBrand leading-tight">PROSPECTIVE</span>
+                    <span class="text-[9px] sm:text-[11px] tracking-[0.2em] uppercase text-gray-200">Design And Build</span>
                 </div>
             </a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium">
+            <nav class="hidden lg:flex space-x-6 text-sm font-medium">
                 <a href="#about" class="hover:text-goldBrand transition">About</a>
                 <a href="#services" class="hover:text-goldBrand transition">Services</a>
                 <a href="#calculator" class="hover:text-goldBrand transition">Cost Estimator</a>
                 <a href="#projects" class="hover:text-goldBrand transition">Portfolio</a>
                 <a href="#contact" class="hover:text-goldBrand transition">Contact</a>
             </nav>
-            <a href="https://wa.me/919235261004?text=Hello%20Prospective%20Design%20And%20Build,%20I%20would%20like%20to%20discuss%20an%20interior%20project." target="_blank" class="bg-goldBrand text-emeraldBrand px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition shadow-md">
+            <a href="https://wa.me/919235261004?text=Hello%20Prospective%20Design%20And%20Build,%20I%20would%20like%20to%20discuss%20an%20interior%20project." target="_blank" class="shrink-0 bg-goldBrand text-emeraldBrand px-3.5 sm:px-4 py-2.5 rounded-md text-xs sm:text-sm font-bold hover:bg-goldLight transition shadow-md">
                 <i class="fab fa-whatsapp mr-1"></i> Book Consultation
             </a>
         </div>
@@ -127,7 +129,7 @@
             </div>
             <div>
                 <p class="font-serif text-3xl font-bold text-emeraldBrand">10+ Years</p>
-                <p class="text-xs uppercase tracking-wider text-gray-500 mt-1">Material & Surface Expertise</p>
+                <p class="text-xs uppercase tracking-wider text-gray-500 mt-1">Material And Surface Expertise</p>
             </div>
         </div>
     </section>
@@ -136,7 +138,7 @@
     <section id="services" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <span class="text-goldBrand font-bold text-xs uppercase tracking-widest">What We Deliver</span>
-            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldBrand mt-2">Comprehensive Design & Build Solutions</h2>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-emeraldBrand mt-2">Comprehensive Design And Build Solutions</h2>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand/50 transition">
@@ -150,14 +152,14 @@
                 <div class="w-12 h-12 bg-emeraldBrand text-goldBrand rounded-lg flex items-center justify-center text-xl mb-6">
                     <i class="fas fa-building"></i>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Commercial & Retail Spaces</h3>
+                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Commercial And Retail Spaces</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">High-efficiency corporate offices, showrooms, clinics, and institutional interiors engineered for acoustics, ergonomics, and brand identity.</p>
             </div>
             <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:border-goldBrand/50 transition">
                 <div class="w-12 h-12 bg-emeraldBrand text-goldBrand rounded-lg flex items-center justify-center text-xl mb-6">
                     <i class="fas fa-hotel"></i>
                 </div>
-                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Hospitality & Civil Build</h3>
+                <h3 class="font-serif text-xl font-bold text-emeraldBrand mb-3">Hospitality And Civil Build</h3>
                 <p class="text-gray-600 text-sm leading-relaxed">Boutique hotels, banquet halls, and structural civil renovation with strict BOQ transparency and milestone-based quality audits.</p>
             </div>
         </div>
@@ -185,8 +187,8 @@
                         <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Finish Specification</label>
                         <select id="finishGrade" onchange="calculateEstimate()" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-emeraldBrand">
                             <option value="1450">Essential Turnkey (₹1,450 / sq.ft)</option>
-                            <option value="1950" selected>Premium Acrylic & Veneer (₹1,950 / sq.ft)</option>
-                            <option value="2650">Signature Luxury & Automation (₹2,650 / sq.ft)</option>
+                            <option value="1950" selected>Premium Acrylic And Veneer (₹1,950 / sq.ft)</option>
+                            <option value="2650">Signature Luxury And Automation (₹2,650 / sq.ft)</option>
                         </select>
                     </div>
                 </div>
@@ -220,30 +222,30 @@
                     Founded with over a decade of deep industry expertise in architectural surfaces, laminates, and turnkey construction, Prospective Design And Build eliminates the chaos of unorganized contracting. Every project is governed by documented 3D visualizations, transparent Bill of Quantities (BOQ), and strict stage-wise supervision.
                 </p>
                 <ul class="space-y-3 text-sm text-gray-700">
-                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Factory-finished modular woodwork & BWP marine-grade plywood</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Factory-finished modular woodwork And BWP marine-grade plywood</li>
                     <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Fixed-price milestone billing with zero hidden escalations</li>
-                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Dedicated on-site engineering & Pan-India logistics support</li>
+                    <li class="flex items-center"><i class="fas fa-check-circle text-goldBrand mr-3"></i> Dedicated on-site engineering And Pan-India logistics support</li>
                 </ul>
             </div>
             <div id="projects" class="grid grid-cols-2 gap-4">
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <span class="text-xs font-bold text-goldBrand uppercase">Lucknow</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Luxury Residences & Kitchens</h4>
-                    <p class="text-xs text-gray-500 mt-2">Sushant Golf City, Gomti Nagar Extension & Shalimar One World.</p>
+                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Luxury Residences And Kitchens</h4>
+                    <p class="text-xs text-gray-500 mt-2">Sushant Golf City, Gomti Nagar Extension And Shalimar One World.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
                     <span class="text-xs font-bold text-goldBrand uppercase">Ranchi</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Hotel & Banquet Complex</h4>
+                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Hotel And Banquet Complex</h4>
                     <p class="text-xs text-gray-500 mt-2">Turnkey hospitality interiors, acoustic paneling, and lobby design.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">Bareilly & Pilibhit</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Villas & Retail Showrooms</h4>
+                    <span class="text-xs font-bold text-goldBrand uppercase">Bareilly And Pilibhit</span>
+                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Villas And Retail Showrooms</h4>
                     <p class="text-xs text-gray-500 mt-2">Custom villa construction and high-security jewelry showroom interiors.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                    <span class="text-xs font-bold text-goldBrand uppercase">NCR & Bihar</span>
-                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Bungalows & Turnkey Sites</h4>
+                    <span class="text-xs font-bold text-goldBrand uppercase">NCR And Bihar</span>
+                    <h4 class="font-serif font-bold text-emeraldBrand mt-1">Bungalows And Turnkey Sites</h4>
                     <p class="text-xs text-gray-500 mt-2">Noida Wave City and Madhubani bespoke residential handovers.</p>
                 </div>
             </div>
@@ -287,4 +289,32 @@
             </div>
         </div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 text-center text-xs text-gray-400">
-            &co
+            &copy; 2026 Prospective Design And Build. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        function calculateEstimate() {
+            const area = parseInt(document.getElementById('carpetArea').value);
+            const rate = parseInt(document.getElementById('finishGrade').value);
+            const multiplier = parseFloat(document.getElementById('projectType').value);
+            document.getElementById('areaValue').innerText = area.toLocaleString('en-IN') + ' sq.ft';
+            const total = area * rate * multiplier;
+            let formatted = '';
+            if (total >= 10000000) {
+                formatted = '₹' + (total / 10000000).toFixed(2) + ' Crore';
+            } else {
+                formatted = '₹' + (total / 100000).toFixed(2) + ' Lakhs';
+            }
+            document.getElementById('estimatedCost').innerText = formatted;
+        }
+
+        function sendEstimateWhatsApp() {
+            const area = document.getElementById('areaValue').innerText;
+            const cost = document.getElementById('estimatedCost').innerText;
+            const msg = encodeURIComponent(`Hello Prospective Design And Build, I used your website estimator for ${area} (Approx. ${cost}) and would like a detailed BOQ consultation.`);
+            window.open(`https://wa.me/919235261004?text=${msg}`, '_blank');
+        }
+    </script>
+</body>
+</html>
